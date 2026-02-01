@@ -1,0 +1,24 @@
+params:
+  - id: worker_count
+    type: number
+    name: "worker count"
+    description: "Number of worker processes for handling notifications"
+    default_value: 1
+    optional: true
+    min: 1
+    max: 10
+
+  - id: enable_admin
+    type: string
+    name: "enable admin mode"
+    description: "Enable admin interface for managing notification configurations(y or n)"
+    default_value: y
+
+locales:
+  zh:
+    worker_count:
+      name: "工作进程数"
+      description: "用于处理通知的工作进程数量"
+    enable_admin:
+      name: "启用管理模式"
+      description: "启用管理界面以管理通知配置(y 或 n)"

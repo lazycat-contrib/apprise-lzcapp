@@ -1,0 +1,16 @@
+package: community.lazycat.app.apprise
+version: 1.4.1
+name: Apprise
+description: "Apprise - Push Notifications that work with just about every platform"
+min_os_version: 1.5.0
+author: Chris Caron
+license: MIT
+homepage: https://github.com/caronc/apprise
+
+locales:
+  en:
+    name: "Apprise"
+    description: "Push Notifications that work with just about every platform"
+  zh:
+    name: "Apprise"
+    description: "支持几乎所有平台的推送通知服务"

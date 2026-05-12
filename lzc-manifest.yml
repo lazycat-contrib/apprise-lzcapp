@@ -1,12 +1,3 @@
-name: Apprise
-package: community.lazycat.app.apprise
-version: 1.3.1
-min_os_version: 1.3.8
-description: "Apprise - Push Notifications that work with just about every platform"
-license: MIT
-homepage: https://github.com/caronc/apprise
-author: Chris Caron
-
 application:
   subdomain: apprise
   upstreams:
@@ -17,8 +8,7 @@ application:
 
 services:
   apprise:
-    # caronc/apprise:v1.3.1
-    image: docker.1ms.run/caronc/apprise:v1.3.1
+    image: docker.1ms.run/caronc/apprise:v1.4.1
     environment:
       - APPRISE_STATEFUL_MODE=simple
       - APPRISE_WORKER_COUNT={{.U.worker_count}}
@@ -27,11 +17,3 @@ services:
       - /lzcapp/var/config:/config
       - /lzcapp/var/plugin:/plugin
       - /lzcapp/var/attach:/attach
-
-locales:
-  en:
-    name: "Apprise"
-    description: "Push Notifications that work with just about every platform"
-  zh:
-    name: "Apprise"
-    description: "支持几乎所有平台的推送通知服务"

@@ -5,10 +5,10 @@ application:
       backend: http://apprise:8000/
   public_path:
     - /
-
 services:
   apprise:
-    image: docker.1ms.run/caronc/apprise:v1.4.1
+    # upstream: caronc/apprise:v1.5.2
+    image: docker.1ms.run/caronc/apprise:v1.5.2
     environment:
       - APPRISE_STATEFUL_MODE=simple
       - APPRISE_WORKER_COUNT={{.U.worker_count}}

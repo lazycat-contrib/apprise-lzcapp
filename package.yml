@@ -1,5 +1,5 @@
 package: community.lazycat.app.apprise
-version: 2.0.0
+version: 2.0.1
 name: Apprise
 description: "Apprise - Push Notifications that work with just about every platform"
 min_os_version: 1.5.0

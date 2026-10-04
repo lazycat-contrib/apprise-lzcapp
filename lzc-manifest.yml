@@ -7,8 +7,8 @@ application:
     - /
 services:
   apprise:
-    # upstream: caronc/apprise:v2.0.0
-    image: docker.1ms.run/caronc/apprise:v2.0.0
+    # upstream: caronc/apprise:2.0.1
+    image: docker.1ms.run/caronc/apprise:2.0.1
     environment:
       - APPRISE_STATEFUL_MODE=simple
       - APPRISE_WORKER_COUNT={{.U.worker_count}}
